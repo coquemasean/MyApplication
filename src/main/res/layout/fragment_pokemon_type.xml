@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#f1f1f1"
+    tools:context=".Fragment.PokemonList">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.mancj.materialsearchbar.MaterialSearchBar
+            android:id="@+id/search_bar"
+            android:padding="16dp"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:mt_speechMode="false"
+            app:mt_hint="Enter your Pokemon name"
+
+            ></com.mancj.materialsearchbar.MaterialSearchBar>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/pokemon_list_recyclerview"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+
+</FrameLayout>
